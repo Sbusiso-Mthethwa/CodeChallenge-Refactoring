@@ -1,0 +1,14 @@
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\bin\Debug\netcoreapp3.1\CodeChallenge.exe
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\bin\Debug\netcoreapp3.1\CodeChallenge.deps.json
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\bin\Debug\netcoreapp3.1\CodeChallenge.runtimeconfig.json
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\bin\Debug\netcoreapp3.1\CodeChallenge.runtimeconfig.dev.json
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\bin\Debug\netcoreapp3.1\CodeChallenge.dll
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\bin\Debug\netcoreapp3.1\CodeChallenge.pdb
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\obj\Debug\netcoreapp3.1\CodeChallenge.csproj.AssemblyReference.cache
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\obj\Debug\netcoreapp3.1\CodeChallenge.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\obj\Debug\netcoreapp3.1\CodeChallenge.AssemblyInfoInputs.cache
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\obj\Debug\netcoreapp3.1\CodeChallenge.AssemblyInfo.cs
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\obj\Debug\netcoreapp3.1\CodeChallenge.csproj.CoreCompileInputs.cache
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\obj\Debug\netcoreapp3.1\CodeChallenge.dll
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\obj\Debug\netcoreapp3.1\CodeChallenge.pdb
+C:\Users\sbusisomth\Desktop\CODES\C#\CodeChallenge\CodeChallenge\obj\Debug\netcoreapp3.1\CodeChallenge.genruntimeconfig.cache
