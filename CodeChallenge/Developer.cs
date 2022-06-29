@@ -9,31 +9,28 @@ namespace CodeChallenge
         public const int SERIOUSNESS_WEIGHT = 10;
         public const int COLLABORATION_WEIGHT = 10;
         public const int WORKING_HOURS_WEIGHT = 5;
-        public const int SELF_AWARENESS_WEIGHT = 5;
         public const int LEVEL_OF_COMMUNICATION = 5;
+
 
         public string Name { get; set; }
         public bool IsSerious { get; set; }
         public bool EnjoysCollaboration { get; set; }
-        public int NumberOfWorkingHours { get; set; }
-        public int LevelOfSelfAwareness { get; set; }
-        public int LevelOfCommunication { get; set; }
+        public int HoursWorked { get; set; }
+        public Enum.CommunicationLevel LevelOfCommunication { get; set; }
         public int Bias { get; set; }
 
         public Developer(
             String name,
             bool isSerious,
             bool enjoysCollaboration,
-            int numberOfWorkingHours,
-            int levelOfSelfAwareness,
-            int levelOfCommunication
+            int hoursWorked,
+            Enum.CommunicationLevel levelOfCommunication
         )
         {
             Name = name;
             IsSerious = isSerious;
             EnjoysCollaboration = enjoysCollaboration;
-            NumberOfWorkingHours = numberOfWorkingHours;
-            LevelOfSelfAwareness = levelOfSelfAwareness;
+            HoursWorked = hoursWorked;
             LevelOfCommunication = levelOfCommunication;
 
             if (Name.Equals("Sbusiso", StringComparison.InvariantCultureIgnoreCase))
@@ -49,9 +46,8 @@ namespace CodeChallenge
 
         public int Fitness()
         {
-            int fitness = Bias * (NumberOfWorkingHours * WORKING_HOURS_WEIGHT)
-                    + Bias * (LevelOfSelfAwareness * SELF_AWARENESS_WEIGHT)
-                    + Bias * (LevelOfCommunication * LEVEL_OF_COMMUNICATION);
+            int fitness = Bias * (HoursWorked * WORKING_HOURS_WEIGHT)
+                    + Bias * (((int)LevelOfCommunication) * LEVEL_OF_COMMUNICATION);
             if (IsSerious)
             {
                 fitness += Bias * SERIOUSNESS_WEIGHT;
@@ -70,8 +66,7 @@ namespace CodeChallenge
                     "\n\n\tName = " + Name +
                     ",\n\tIsSerious = " + IsSerious +
                     ",\n\tEnjoysCollaboration = " + EnjoysCollaboration +
-                    ",\n\tNumberOfWorkingHours = " + NumberOfWorkingHours +
-                    ",\n\tLevelOfSelfAwareness = " + LevelOfSelfAwareness +
+                    ",\n\tNumberOfWorkingHours = " + HoursWorked +
                     ",\n\tLevelOfCommunication = " + LevelOfCommunication +
                     ",\n\tBias = " + Bias +
                     ",\n\tFitness = " + Fitness() +

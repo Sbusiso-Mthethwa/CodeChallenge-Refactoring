@@ -6,8 +6,8 @@ namespace CodeChallenge
     {
         static void Main(string[] args)
         {
-            Sprint Sprint1 = new Sprint();
-            Console.WriteLine("\nBest developer in Sprint1:\n"
+            Sprint Sprint1 = Sprint.GetInstance();
+            Console.WriteLine("\nBest developer this Sprint:\n"
                     + Sprint1.GetBestDeveloper().Name + "\n"
                     + "Score: " + Sprint1.GetBestDeveloper().Fitness() + "\n"
             );

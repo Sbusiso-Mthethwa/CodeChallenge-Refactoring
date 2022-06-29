@@ -6,6 +6,7 @@ namespace CodeChallenge
 {
     public class Sprint
     {
+        public static Sprint sprint;
         public static String[] devsNames = {
             "Gabriel",
             "Joshua",
@@ -20,27 +21,32 @@ namespace CodeChallenge
 
         private List<Developer> Developers = new List<Developer>();
 
-        public Sprint()
-        {
+        private Sprint()
+        { 
+            Random rn = new Random();
             foreach (String dev in devsNames)
             {
-                Random rn = new Random();
                 int tempIsSerious = rn.Next(0,2);
                 int tempEnjoysCollaboration = rn.Next(0,2);
-                int tempWorkingHours = rn.Next(91);
-                int tempLevelOfSelfAwareness = rn.Next(1, 6);
-                int tempLevelOfCommunication = rn.Next(1, 4);
+                int hoursWorked = rn.Next(81);
+                Enum.CommunicationLevel tempLevelOfCommunication = (Enum.CommunicationLevel)rn.Next(1, 4);
 
                 Developer developer = new Developer(
                         dev,
                         tempIsSerious == 1 ? true : false,
                         tempEnjoysCollaboration == 1 ? true : false,
-                        tempWorkingHours,
-                        tempLevelOfSelfAwareness,
+                        hoursWorked,
                         tempLevelOfCommunication
                 );
                 Developers.Add(developer);
             }
+        }
+
+        public static Sprint GetInstance()
+        {
+            if (sprint == null)
+                sprint = new Sprint();
+            return sprint;
         }
 
         public Developer GetBestDeveloper()
